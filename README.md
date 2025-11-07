@@ -31,7 +31,14 @@ This repo provides a working example of how to:
   git clone https://github.com/vemurisrujan/Azure-B2C-Authentication-Policies.git
   cd Azure-B2C-Authentication-Policies
 ```
-- Update XML files with your B2C tenant name and client IDs.
+- Update XML files with your B2C tenant name and tenent id in appsettings.
+- Update the appsettings to set your IDP client ID based on the specified environment.
+- Once updated, use the following command to generate the environment-specific XML files:
+```bash
+  Ctrl+Shift+5
+```
+> **Note:** If the above command does not work, please install the **Azure B2C Tool Extension** in Visual Studio.
+
 - Upload the policies in order (Base → Extensions → Relying Party) to your Azure B2C tenant.
 
 #### 🧩 Key Features
@@ -45,3 +52,4 @@ This repo provides a working example of how to:
 - [Microsoft Docs: Azure AD B2C Custom Policies](https://learn.microsoft.com/en-us/azure/active-directory-b2c/custom-policy-overview).
 - [IEF Starter Pack GitHub](https://github.com/Azure-Samples/active-directory-b2c-custom-policy-starterpack).
 - [REST API Integration Guide](https://learn.microsoft.com/en-us/azure/active-directory-b2c/api-connectors-overview?pivots=b2c-custom-policy).
+- [Azure B2C Tool Extension](https://marketplace.visualstudio.com/items?itemName=AzureADB2CTools.aadb2c).
